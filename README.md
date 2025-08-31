@@ -7,19 +7,12 @@ Goal: Commit every single day ✅
 ---
 
 ## 📅 Daily Progress
-
-###Simple Calculator (popup & in-page)
 - Learned how to use `prompt()`, `alert()` and `Number()`.
 - Built a **popup calculator** for `+ - * /`.
 - Built an **in-page calculator** using `<input>` fields and buttons.
-- Added CSS styling for cleaner UI.
-
-###Operators & Math
 - Learned basic operators: `+ - * / % **`.
 - Built a **calculator in the browser page** supporting all these operators.
 - Practiced increment (`++`) and decrement (`--`).
-
-###Comparisons & Conditional Branching
 - Learned comparison operators: `== != > < >= <=`.
 - Practiced `if / else if / else`.
 - Learned ternary operator `? :`.
