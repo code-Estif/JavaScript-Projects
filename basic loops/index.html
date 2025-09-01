@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Range Tool</title>
+  <style>
+    /* General Page Style */
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Title */
+h1 {
+  color: #2563eb;
+  margin-bottom: 20px;
+}
+
+/* Labels + Inputs */
+label {
+  margin: 10px;
+  font-size: 16px;
+}
+
+input {
+  padding: 8px;
+  margin-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #2563eb;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+/* Output Section */
+h2 {
+  margin-top: 30px;
+  color: #111827;
+}
+
+p {
+  font-weight: bold;
+  font-size: 18px;
+  color: #16a34a;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Number Range Tool</h1>
+
+  <label>Start Number: <input type="number" id="start"></label>
+  <label>End Number: <input type="number" id="end"></label>
+  <button id="generate">Generate</button>
+
+  <h2>Sum of Numbers</h2>
+  <p id="sumOutput"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
