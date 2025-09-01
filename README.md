@@ -17,6 +17,8 @@ Goal: Commit every single day ✅
 - Practiced `if / else if / else`.
 - Learned ternary operator `? :`.
 - Wrote examples: voting age check, even/odd check.
+- practiced loop > while and for
+- build number range tool
 
 ## 🎯 Goal
 - Learn JavaScript deeply (step by step).
