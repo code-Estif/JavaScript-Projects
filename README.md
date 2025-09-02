@@ -19,6 +19,7 @@ Goal: Commit every single day ✅
 - Wrote examples: voting age check, even/odd check.
 - practiced loop > while and for
 - build number range tool
+- build multiplication number generator
 
 ## 🎯 Goal
 - Learn JavaScript deeply (step by step).
