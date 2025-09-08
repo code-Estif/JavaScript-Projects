@@ -20,6 +20,8 @@ Goal: Commit every single day ✅
 - practiced loop > while and for
 - build number range tool
 - build multiplication number generator
+- build math fromula coverter with function and an array
+- practice function with array and loop together
 
 ## 🎯 Goal
 - Learn JavaScript deeply (step by step).
