@@ -22,6 +22,8 @@ Goal: Commit every single day ✅
 - build multiplication number generator
 - build math fromula coverter with function and an array
 - practice function with array and loop together
+- build to-do list pages
+  
 
 ## 🎯 Goal
 - Learn JavaScript deeply (step by step).
