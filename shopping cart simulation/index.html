@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Shopping Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .product-card {
+            max-width: 400px;
+            width: 100%;
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-image-container {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .product-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .content {
+            padding: 1.5rem;
+        }
+
+        .quantity-control {
+            display: flex;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            background-color: white;
+            flex-grow: 1;
+        }
+
+        .quantity-btn {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-size: 1.25rem;
+            font-weight: 500;
+            user-select: none;
+            color: #6b7280;
+            background-color: #f9fafb;
+            transition: all 0.2s ease;
+        }
+
+        .quantity-btn:hover {
+            background-color: #e5e7eb;
+            color: #1f2937;
+        }
+
+        .quantity-btn:active {
+            background-color: #d1d5db;
+        }
+
+        #quantity {
+            width: 3rem;
+            text-align: center;
+            border: none;
+            outline: none;
+            font-weight: 600;
+            background-color: white;
+            -moz-appearance: textfield;
+            /* Firefox */
+        }
+
+        #quantity::-webkit-inner-spin-button,
+        #quantity::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 0.75rem 1.5rem;
+            background-color: white;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            transition: all 0.2s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #f9fafb;
+        }
+
+        .buy-now {
+            width: 100%;
+            padding: 0.75rem 1.5rem;
+            background-color: #10b981;
+            color: white;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+        .buy-now:hover {
+            background-color: #059669;
+        }
+
+        /* Modal for messages */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .modal-close-btn {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #10b981;
+            color: white;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .modal-close-btn:hover {
+            background-color: #059669;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-card">
+        <!-- Product Image -->
+        <div class="product-image-container">
+            <img src="https://placehold.co/400x250/E5E7EB/1F2937?text=Delicious+Food" alt="Delicious Food">
+        </div>
+
+        <div class="content flex flex-col space-y-4">
+            <!-- Product Details -->
+            <div>
+                <h1 class="text-2xl font-bold text-gray-900" id="productTitle">Pizza Pepperoni</h1>
+                <p class="text-lg font-semibold text-gray-700 mt-2"><span id="productPrice">$12.99</span></p>
+                <p class="text-sm text-gray-500 mt-1" id="productDescription">A classic pepperoni pizza with fresh mozzarella and a hint of oregano. Perfect for sharing!</p>
+            </div>
+
+            <!-- Choice Section -->
+            <div class="flex flex-col space-y-2">
+                <p class="font-bold text-gray-800">Choose your flavor</p>
+                <select id="flavorSelector" class="w-full p-2 border border-gray-300 rounded-md">
+                    <option value="Pepperoni" data-price="12.99" selected>Pepperoni</option>
+                    <option value="Margarita" data-price="11.50">Margarita</option>
+                    <option value="Veggie" data-price="13.99">Veggie</option>
+                    <option value="Hawaiian" data-price="14.50">Hawaiian</option>
+                </select>
+            </div>
+
+            <!-- Quantity and Add to Cart -->
+            <div class="flex flex-col space-y-2">
+                <p class="font-bold text-gray-800">Quantity</p>
+                <div class="flex items-center space-x-4">
+                    <div class="quantity-control flex-grow">
+                        <button class="quantity-btn rounded-l-md" onclick="updateQuantity(-1)">-</button>
+                        <input type="number" id="quantity" value="1" min="1" class="flex-grow text-center">
+                        <button class="quantity-btn rounded-r-md" onclick="updateQuantity(1)">+</button>
+                    </div>
+                    <button class="add-to-cart" id="addToCartBtn">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Buy Now Button -->
+            <button class="buy-now" id="buyNowBtn">Buy it now</button>
+        </div>
+    </div>
+
+    <!-- Message Modal -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <p id="modalMessage" class="text-lg font-semibold text-gray-800"></p>
+            <button class="modal-close-btn" onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+</body>
+</html>
