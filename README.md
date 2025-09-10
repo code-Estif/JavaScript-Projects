@@ -23,6 +23,7 @@ Goal: Commit every single day ✅
 - build math fromula coverter with function and an array
 - practice function with array and loop together
 - build to-do list pages
+- build shoping cart simulation with function and arrays...
   
 
 ## 🎯 Goal
