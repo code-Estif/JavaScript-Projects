@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer FAQ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      width: 400px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1976d2;
+      margin-bottom: 20px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .question {
+      cursor: pointer;
+      margin: 0;
+      font-weight: bold;
+      position: relative;
+      padding-right: 20px;
+    }
+
+    .question::after {
+      content: "+";
+      position: absolute;
+      right: 0;
+      transition: transform 0.3s;
+    }
+
+    .faq-item.active .question::after {
+      transform: rotate(45deg);
+    }
+
+    .answer {
+      display: none;
+      margin-top: 8px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Developer FAQ</h1>
+    <div id="faqContainer"></div>
+  </div>
+
+  <script src='script.js'></script>
+</body>
+</html>
