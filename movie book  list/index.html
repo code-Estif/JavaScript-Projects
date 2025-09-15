@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie & Book List App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: #fff;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      width: 400px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    input {
+      padding: 8px;
+      width: 70%;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+      background: #007bff;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .list {
+      margin-top: 15px;
+      text-align: left;
+    }
+    .message {
+      margin-top: 10px;
+      color: #555;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Movie / Book List</h2>
+    <input type="text" id="itemInput" placeholder="Enter title...">
+    <br>
+    <button onclick="addItem()">Add</button>
+    <button onclick="removeItem()">Remove</button>
+    <button onclick="searchItem()">Search</button>
+    <button onclick="showAll()">Show All</button>
+    <div class="list" id="list"></div>
+    <div class="message" id="message"></div>
+  </div>
+  <script src='script.js'></script>
+</body>
+</html>
