@@ -35,3 +35,5 @@ Goal: Commit every single day ✅
 ---
 
 ⭐ Stay tuned — I will keep updating this repo daily with my progress!
+[clone link] (https://github.com/code-Estif/JavaScript-Projects.git)
+
