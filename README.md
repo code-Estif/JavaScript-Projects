@@ -1,12 +1,12 @@
-# 🚀 My JavaScript Learning Journey
+# My JavaScript Learning Journey
 
 This repository is my daily log while learning **JavaScript**.  
 Each day, I create a folder with the code I practiced + a README.md explaining what I learned.  
-Goal: Commit every single day ✅
+Goal: Commit every single day 
 
 ---
 
-## 📅 Daily Progress
+## Daily Progress
 - Learned how to use `prompt()`, `alert()` and `Number()`.
 - Built a **popup calculator** for `+ - * /`.
 - Built an **in-page calculator** using `<input>` fields and buttons.
@@ -26,14 +26,15 @@ Goal: Commit every single day ✅
 - build shoping cart simulation with function and arrays...
 - used array methods and function together for big projects
 - build question and answet FAQ toggle with JS
+- learned objects with method and some of simple concepts like constructor, prototype...
+- build Reclipe card with constructor function and 'this' methods...
 
-## 🎯 Goal
+## Goal
 - Learn JavaScript deeply (step by step).
 - Commit **every day** to track progress.
 - Build projects once basics are solid.
 
----
 
-⭐ Stay tuned — I will keep updating this repo daily with my progress!
+Stay tuned — I will keep updating this repo daily with my progress!
 [clone link] (https://github.com/code-Estif/JavaScript-Projects.git)
 
