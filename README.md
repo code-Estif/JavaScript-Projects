@@ -61,7 +61,7 @@ Improve front-end skills with HTML, CSS, and JS
 
 Repository
 
-Clone my JavaScript Projects Repo [clone link](https://github.com/code-Estif/JavaScript-Projects.git)
+Clone my JavaScript Projects Repo (clone link)[https://github.com/code-Estif/JavaScript-Projects.git]
 
 Upcoming / Next Steps
 
