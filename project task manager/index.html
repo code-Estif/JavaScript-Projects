@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project & Task Manager</title>
+  <style>
+   body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#newProjectName {
+  padding: 10px;
+  width: 60%;
+  border: 2px solid #4cafef;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#addProjectBtn {
+  padding: 10px 15px;
+  background: #4cafef;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.project-card {
+  background: white;
+  border: 2px solid #ddd;
+  border-left: 8px solid #4cafef;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.project-header h2 {
+  margin: 0;
+  color: #4cafef;
+}
+
+.tasks-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.tasks-list li {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.tasks-list li span {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.tasks-list li span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tasks-list li button {
+  background: #ff5252;
+  color: white;
+}
+
+.add-btn {
+  margin-top: 10px;
+  background: #4cafef;
+  color: white;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Project & Task Manager</h1>
+  <div>
+    <input type="text" id="newProjectName" placeholder="New project name">
+    <button id="addProjectBtn">Add Project</button>
+  </div>
+  <div id="projectsContainer"></div>
+
+  <script src='script.js'></script>
+</body>
+</html>
