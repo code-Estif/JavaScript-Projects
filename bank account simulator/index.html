@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Account Simulator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+    input {
+      width: 90%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 8px 15px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+    }
+    .deposit-btn { background: #4caf50; }
+    .withdraw-btn { background: #ff5252; }
+    .balance-btn { background: #4cafef; }
+    .output {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Bank Account</h2>
+    <input type="text" id="owner" placeholder="Account owner">
+    <input type="number" id="amount" placeholder="Amount">
+    <div>
+      <button class="deposit-btn" onclick="deposit()">Deposit</button>
+      <button class="withdraw-btn" onclick="withdraw()">Withdraw</button>
+      <button class="balance-btn" onclick="showBalance()">Show Balance</button>
+    </div>
+    <div class="output" id="output">Balance: ---</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
