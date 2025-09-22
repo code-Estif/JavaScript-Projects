@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Form with Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #333;
+    }
+    input {
+      width: 90%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #4cafef;
+      color: white;
+      margin-top: 10px;
+    }
+    .welcome-card {
+      margin-top: 15px;
+      padding: 15px;
+      border: 2px solid #4cafef;
+      border-radius: 6px;
+      background: #e6f7ff;
+      display: none;
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Create Account</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="createBtn">Sign Up</button>
+    <p class="error" id="errorMsg"></p>
+
+    <div class="welcome-card" id="welcomeCard">
+      <h3 id="welcomeName"></h3>
+      <p id="welcomeEmail"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
