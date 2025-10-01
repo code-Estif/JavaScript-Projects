@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Theme Switcher</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      transition: background 0.3s, color 0.3s;
+    }
+    body.light {
+      background: #f4f6f9;
+      color: #222;
+    }
+    body.dark {
+      background: #1e1e1e;
+      color: #f4f6f9;
+    }
+    .container {
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      background: inherit;
+    }
+    button {
+      margin-top: 15px;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      background: #4cafef;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="light">
+  <div class="container">
+    <h2>🌓 Theme Switcher</h2>
+    <p>Click the button to toggle light/dark mode.</p>
+    <button id="toggleBtn">Switch Theme</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
