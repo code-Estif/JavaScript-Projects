@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Loader (Promises)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+      width: 360px;
+      text-align: center;
+    }
+    input, button {
+      width: 90%;
+      margin-top: 10px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #4cafef;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    img {
+      width: 100%;
+      margin-top: 15px;
+      border-radius: 6px;
+      display: none;
+    }
+    .message {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🖼 Image Loader</h2>
+    <input type="text" id="imgUrl" placeholder="Enter image URL">
+    <button id="loadBtn">Load Image</button>
+    <div class="message" id="msg"></div>
+    <img id="preview" src="" alt="Loaded Image">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
