@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notes History</title>
+  <style>
+    body{font-family:Arial,sans-serif;background:#f4f6f9;margin:0;padding:20px;}
+    h2{text-align:center;color:#4cafef;}
+    .note{background:white;padding:10px;margin:10px auto;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,0.1);width:80%;}
+    .note h3{margin:0 0 5px;}
+    .note small{color:#777;}
+    button{background:crimson;color:white;border:none;padding:4px 8px;border-radius:4px;cursor:pointer;float:right;}
+    .top{text-align:center;margin-bottom:15px;}
+  </style>
+</head>
+<body>
+  <div class="top">
+    <button onclick="location.href='index.html'">➕ Add New Note</button>
+  </div>
+  <h2>📚 Notes History</h2>
+  <div id="notesList"></div>
+
+  <script src="history.js"></script>
+</body>
+</html>
