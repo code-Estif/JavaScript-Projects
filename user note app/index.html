@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Note</title>
+  <style>
+    body{font-family:Arial,sans-serif;background:#f4f6f9;display:flex;justify-content:center;align-items:center;min-height:100vh;margin:0;}
+    .box{background:white;padding:20px;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);width:350px;text-align:center;}
+    input,textarea{width:90%;padding:8px;margin:6px 0;border:1px solid #ccc;border-radius:5px;}
+    button{padding:8px 12px;border:none;border-radius:6px;background:#4cafef;color:white;cursor:pointer;margin:5px;}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>📝 Add a Note</h2>
+    <input type="text" id="title" placeholder="Title"><br>
+    <textarea id="text" placeholder="Your note..." rows="4"></textarea><br>
+    <button id="saveBtn">Save Note</button>
+    <button onclick="location.href='history.html'">View History</button>
+    <div id="msg"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
