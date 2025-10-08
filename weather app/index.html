@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Country Info Finder</title>
+<style>
+  body{
+    font-family:Arial,sans-serif;
+    background:#eef3f9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+  }
+  .box{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    width:400px;
+    text-align:center;
+  }
+  h2{color:#2196f3;}
+  input{
+    width:80%;
+    padding:8px;
+    border:1px solid #ccc;
+    border-radius:6px;
+  }
+  button{
+    padding:8px 12px;
+    background:#2196f3;
+    color:white;
+    border:none;
+    border-radius:6px;
+    margin-top:8px;
+    cursor:pointer;
+  }
+  .result{
+    margin-top:15px;
+    background:#f4f8ff;
+    padding:12px;
+    border-radius:8px;
+  }
+  img{width:120px;border-radius:6px;margin-top:10px;}
+</style>
+</head>
+<body>
+  <div class="box">
+    <h2>🌍 Country Info Finder</h2>
+    <input type="text" id="country" placeholder="Enter country name">
+    <button id="btn">Search</button>
+    <div class="result" id="result">Type a country to search.</div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
