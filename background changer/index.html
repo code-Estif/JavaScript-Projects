@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Color Theme Switcher</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background 0.3s;
+  }
+  h2 { color: #333; }
+  .colors {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .color {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 0 4px rgba(0,0,0,0.3);
+  }
+</style>
+</head>
+<body>
+  <h2>🎨 Choose a Background Color</h2>
+  <div class="colors">
+    <div class="color" id="red" style="background:red;"></div>
+    <div class="color" id="blue" style="background:blue;"></div>
+    <div class="color" id="green" style="background:green;"></div>
+    <div class="color" id="purple" style="background:purple;"></div>
+    <div class="color" id="orange" style="background:orange;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
