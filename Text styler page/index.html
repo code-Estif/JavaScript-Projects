@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Text Styler App</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+  }
+  textarea {
+    width: 90%;
+    height: 80px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+  }
+  .controls {
+    margin-top: 10px;
+  }
+  button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 4px;
+  }
+</style>
+</head>
+<body>
+  <div class="box">
+    <h2>🖋 Text Styler</h2>
+    <textarea id="textArea" placeholder="Type something..."></textarea>
+    <div class="controls">
+      <button id="red">Red</button>
+      <button id="blue">Blue</button>
+      <button id="big">Big</button>
+      <button id="small">Small</button>
+      <button id="bold">Bold</button>
+      <button id="italic">Italic</button>
+      <button id="underline">Underline</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
