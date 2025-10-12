@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Image Gallery Navigator</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  h2 { color: #2196f3; }
+  .gallery {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  button {
+    padding: 8px 12px;
+    border: none;
+    background: #2196f3;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <h2>🖼 Image Gallery Navigator</h2>
+  <div class="gallery" id="gallery">
+    <img src="https://picsum.photos/id/1015/300/200" alt="1">
+    <img src="https://picsum.photos/id/1025/300/200" alt="2" style="display:none;">
+    <img src="https://picsum.photos/id/1035/300/200" alt="3" style="display:none;">
+    <img src="https://picsum.photos/id/1045/300/200" alt="4" style="display:none;">
+  </div>
+  <div style="margin-top:15px;">
+    <button id="prev">⬅ Prev</button>
+    <button id="next">Next ➡</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
