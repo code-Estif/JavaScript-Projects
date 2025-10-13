@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Horizontal Comment Slider</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #eef3f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #000; /* all text black */
+  }
+
+  h2 {
+    color: #000;
+    margin-bottom: 20px;
+  }
+
+  .slider {
+    display: flex;
+    gap: 15px;
+    width: 90%;
+    max-width: 650px;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .comment {
+    min-width: 220px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    opacity: 0.6;
+    transform: scale(0.95);
+    transition: 0.3s;
+    color: #000; /* text black */
+  }
+
+  .comment.active {
+    background: #d7ebff;
+    opacity: 1;
+    transform: scale(1.05);
+    font-weight: bold;
+    color: #000; /* text black */
+  }
+
+  .buttons {
+    margin-top: 15px;
+  }
+
+  button {
+    padding: 8px 14px;
+    background: #2196f3;
+    color: #000; /* black text */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <h2>💬 Comment Slider</h2>
+  <div class="slider" id="slider">
+    <div class="comment active">“Great project! 👏”</div>
+    <div class="comment">“I love the color switcher idea 🎨”</div>
+    <div class="comment">“This code helped me a lot 🔥”</div>
+    <div class="comment">“Nice design and layout 🧠”</div>
+    <div class="comment">“Waiting for the next project 😎”</div>
+  </div>
+
+  <div class="buttons">
+    <button id="prev">⬅ Prev</button>
+    <button id="next">Next ➡</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
