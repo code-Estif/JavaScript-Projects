@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Pixel Painter</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+.toolbar {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(16, 20px);
+  gap: 2px;
+  justify-content: center;
+}
+.cell {
+  width: 20px;
+  height: 20px;
+  background: #e0e0e0;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.cell:hover { transform: scale(1.1); }
+button {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  background: #2196f3;
+  color: #fff;
+}
+button:hover { background: #1976d2; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>🎨 Pixel Painter</h1>
+
+    <div class="toolbar">
+      <label>Choose color:</label>
+      <input type="color" id="colorPicker" value="#3498db">
+      <button id="randomBtn">Random Color</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <div id="grid" class="grid"></div>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
