@@ -1,73 +1,77 @@
-My JavaScript Learning Journey
+My JavaScript Learning Journey (Completed 100%)
 
-Hi! I’m Estif, a frontend web developer learning HTML, CSS, and JavaScript.
-This repository is my daily JavaScript log, with small projects, exercises, and notes about what I learn every day.
+Hi! I’m **Estif**, a self-taught front-end web developer from Ethiopia.  
+This repository documents my **100-day JavaScript journey** — building projects every single day from zero to full mastery.
 
- About This Repo:-
+ About This Repo
+- Every day has a folder with a new mini-project I built while learning.
+- Each commit represents my daily practice — real progress, not tutorials.
+- Focused on **real-world apps** users can actually interact with.
+- Goal: Learn deeply, code daily, and build practical projects — not just exercises.
 
-Each day has a folder with the code I practiced.
-Every project is committed daily to track progress.
-Focus is on real projects that a normal user can use, not just developer experiments.
-Goal: Learn deeply, practice daily, and build projects once basics are solid.
+ What I Learned
 
- What I’ve Learned So Far:-
+JavaScript Core
+- Variables, constants, data types, and scope  
+- Type conversion, arithmetic, comparison, and logical operators  
+- Conditionals (`if`, `else`, `switch`, ternary)  
+- Loops (`for`, `while`, `for...of`)  
+- Functions — declarations, expressions, and arrow functions  
+- Callback functions and higher-order functions  
 
-Basic JavaScript
-prompt(), alert(), Number()
-Arithmetic operators: + - * / % **
-Increment ++ / Decrement --
-Comparison operators: == != > < >= <=
-Conditional statements: if / else if / else, ternary ? :
-Loops: while, for
-Functions & Arrays
-Function declaration, expression, arrow functions
-Callbacks
-Arrays (basic + methods): push, pop, shift, unshift, slice, splice, includes, indexOf, map, filter, find, reduce
-Combining arrays, loops, and functions
-Objects & OOP
-Objects with properties and methods
-Constructor functions + this
-Prototype methods
-Classes + static methods
+ Arrays & Objects
+- Array methods: `map`, `filter`, `reduce`, `find`, `forEach`, `slice`, `splice`, `includes`, etc.  
+- Spread & rest operators  
+- Nested and array of objects  
+- Sorting, shuffling, and combining data  
 
- Projects I Built:-
+ OOP & Advanced Concepts
+- Object constructors, prototypes, and `this`  
+- Classes, inheritance, static methods, getters/setters  
+- Closures, `setTimeout`, `setInterval`  
+- Promises, async/await, fetch API  
+- JSON handling and error control  
+- DOM manipulation, event handling (mouse/keyboard), and dynamic UI
 
+ Projects I Built
 
-Calculators
-Popup calculator using prompt()
-In-page calculator with <input> and buttons
-Supports all operators (+ - * / % **)
-Number Tools
-Number range tool
-Multiplication table generator
-Math formula converter with arrays and functions
-Task & List Management
-To-do list pages
-Shopping cart simulatio
-Daily Task Reminder App (class + static method)
-Interactive & UI Features
-FAQ toggle questions/answers
-Recipe card using constructor and this
-Learning Projects with Arrays & Functions
-Projects combining arrays, loops, functions, and object methods
-All projects are designed for real users, not just developers, and aim to show practical use of JavaScript.
+ 🧮 Calculators & Tools
+- Popup calculator using `prompt()`  
+- On-page calculator with inputs and buttons  
+- Number range tool and table generator  
+- Math formula converter and random number utilities  
 
- Goals
+### User Apps
+- To-do list and daily task reminder  
+- Shopping cart with validation and totals  
+- Smart Budget Splitter (multi-user expense calculator)  
+- Habit Tracker (progress bar and localStorage saving)
 
-Learn JavaScript deeply, step by step
-Commit every day to track progress
-Build practical, user-friendly projects
-Improve front-end skills with HTML, CSS, and JS
+ Interactive UIs
+- Movie Mood Picker  
+- Dream Vacation Builder  
+- Pixel Painter (draw with color picker)  
+- Catch the Box (keyboard + mouse game)
 
-Repository
+ Dynamic & Async Projects
+- Weather app using `fetch()` and JSON  
+- Random quote generator  
+- Live digital clock and stopwatch  
 
-Clone my JavaScript Projects Repo (clone link)[https://github.com/code-Estif/JavaScript-Projects.git]
+ My Goals
+- Learn JavaScript deeply — done 
+- Build real, useful apps from scratch 
+- Strengthen front-end skills with clean UI and responsive design  
+- **Next:** Master React.js and start freelancing projects 
 
-Upcoming / Next Steps
+ Repository
+Clone or explore my full code here:  
+ [JavaScript Projects Repo](https://github.com/code-Estif/JavaScript-Projects.git)
 
-Advanced DOM manipulation
-Event listeners & dynamic UI
+ Next Step
+I’ve now completed 100% of JavaScript fundamentals.  
+Next, I'll be focusing on mastering javascript.
+then, I’ll begin **React** to build larger, smarter apps —  
+and start freelancing to turn my skills into real work.
 
-Deeper array and object methods
-
-Mini-projects integrating HTML, CSS, JS for interactive apps
+**– Estif | Front-End Developer in Progress ⚡**
