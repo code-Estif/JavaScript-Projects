@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Smart Budget Splitter</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #000;
+  }
+  .app {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    width: 350px;
+    color: #000;
+  }
+  h1, h3 { text-align: center; color: #000; }
+  input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    color: #000;
+  }
+  button {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    background: #2196f3;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  button:hover { opacity: 0.9; }
+  .green { background: #4caf50; }
+  .red { background: #e53935; }
+  .list {
+    margin-top: 10px;
+    color: #000;
+  }
+  .person {
+    background: #f1f1f1;
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 6px;
+    color: #000;
+  }
+  #result { 
+    margin-top: 12px; 
+    font-size: 15px; 
+    color: #000;
+  }
+  #history {
+    margin-top: 12px;
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+    color: #000;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <h1>💵 Budget Splitter</h1>
+
+  <input id="name" placeholder="Friend name">
+  <input id="paid" type="number" placeholder="Amount paid">
+  <button id="add">Add Person</button>
+  <button id="calc" class="green" style="margin-top:6px;">Calculate Split</button>
+  <button id="save" class="red" style="margin-top:6px;">Save Bill</button>
+
+  <div class="list" id="list"></div>
+  <h3 id="result"></h3>
+
+  <div id="history">
+    <h3>🧾 Bill History</h3>
+    <ul id="historyList"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
