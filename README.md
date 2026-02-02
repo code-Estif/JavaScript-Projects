@@ -1,6 +1,6 @@
 My JavaScript Learning Journey (Completed 100%)
 
-Hi! I’m **Estif**, a self-taught front-end web developer from Ethiopia.  
+Hi! I’m **Estif**, a self-taught front-end web developer from Ethiopia.   
 This repository documents my **JavaScript journey** — building projects every single day from zero.
 
  About This Repo
